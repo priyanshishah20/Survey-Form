@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<div class="main">
+    <heading class="head">
+        OUTING SURVEY
+    </heading>
+    <form>
+        <fieldset class="field1">
+            <legend class="legend">&emsp13;Personal Details&emsp13;</legend>
+            <div class="form-control">
+                <label for="name" id="label-name">
+                    Name:<br>
+                </label>
+                <p1><input type="text" id="name" placeholder="eg. Priyanshi Shah" /></p1>
+            </div>
+            <br>
+            <div class="form-control">
+                <label for="email" id="label-name">
+                    Email I'd: <br>
+                </label>
+                <p1><input type="text" id="name" placeholder="eg. abc@email.com" /></p1>
+            </div>
+            <br>
+            <div class="form-control">
+                <label for="mob" id="label-name">
+                    Mobile No: <br>
+                </label>
+                <p1><input type="text" id="name" placeholder="eg. 89xx" /></p1>
+            </div>
+            <br>
+            <div class="form-control">
+                <label for="outing" id="label-name">
+                    Are you excited for Outing? <br>
+                </label>
+                <p1><input type="radio" name="yes" value="yes">YES<br></p1>
+                <p1><input type="radio" name="yes" value="no">A big YES!!</p1>
+            </div>
+        </fieldset>
+
+        <fieldset class="field2">
+            <legend class="legend">&emsp13;Yayyy, Outing!!&emsp13;</legend>
+            <p>JOBS fill your pockets, ADVENTURES fill your SOUL.</p>
+            <br>
+            <div class="form-control">
+                <label for="date" id="label-name">
+                    Date of Proposed Outing: 
+                </label>
+                <input type="date" name="trip" value="dam"><br>
+            </div>
+            <br>
+            <div class="form-control">
+                <label for="places" id="label-name">
+                    Place you want to visit: <br>
+                </label>
+                <p1><select id="dropdown">
+                    <option value="none">None</option>
+                    <option value="Caves">Elephanta Caves</option>
+                    <option value="Marines">Marines</option>
+                    <option value="Juhu">Juhu beach</option>
+                    <option value="Park">National Park</option>
+                    <option value="Fort">Vasai Fort</option>
+                    <option value="ratangad">Kelve Dam</option>
+                </select></p1>
+            </div>
+            <br>
+            <div class="form-control">
+                <label for="other" id="label-name">
+                    Any other Suggestions? <br>
+                </label>
+                <p1><textarea id="text" name="text" rows="3" cols="30" placeholder="enter text here"></textarea></p1>
+            </div>
+        </fieldset>
+
+        <fieldset class="field3">
+            <legend class="legend">&emsp13;Food Details&emsp13;</legend>
+            <div class="form-control">
+                <label for="food" id="label-name">
+                    Lunch: <br>
+                </label>
+                <p1><input type="radio" name="food" value="jain">Jain<br></p1>
+                <p1><input type="radio" name="food" value="veg">Non-Jain<br></p1>
+            </div>
+            <br>
+            <div class="form-control">
+                <label for="item1" id="label-name">
+                    Jain: <br>
+                </label>
+                <p1><input type="checkbox" name="" value="">Jain Thali<br></p1>
+                <p1><input type="checkbox" name="" value="">Jain PavBhaji<br></p1>
+                <p1><input type="checkbox">Jain Pizza<br></p1>
+                <p1><input type="checkbox">Jain Sandwich<br></p1>
+            </div>
+            <br>
+            <div class="form-control">
+                <label for="item2" id="label-name">
+                    Non-Jain: <br>
+                </label>
+                <p1><input type="checkbox" name="" value="">Veg Thali<br></p1>
+                <p1><input type="checkbox">Pav Bhaji<br></p1>
+                <p1><input type="checkbox">Pizza<br></p1>
+                <p1><input type="checkbox">Sandwich<br></p1>
+                <p1><input type="checkbox">Dosa<br></p1>
+            </div>
+            <br>
+            <div class="form-control">
+                <label for="desert" id="label-name">
+                    Desert: <br>
+                </label>
+                <p1><input type="radio" name="desert" value="ice">Ice-Cream<br></p1>
+                <p1><input type="radio" name="desert" value="muf">Muffins<br></p1>
+            </div>
+        </fieldset>
+        <div class="submit">
+            <button type="submit" value="Submit">&emsp13;Submit&emsp13;</button>
+        </div>
+    </form>
+</div>
+
+</html>
+
+<!--<fieldset class="field2">
+    <legend class="legend">Yayyy, Outing!!</legend>
+    <p>Where would you like to go?
+        Here are some places mentioned below if you're interested. if not, please recommend which place you
+        wanna visit.</p>
+    <br>
+    <div class="form-control">
+        <label for="date" id="label-name">
+            Date of Proposed Outing <br>
+        </label>
+        <input type="date" name="trip" value="dam"><br>
+    </div>
+    <br>
+    <div class="form-control">
+        <label for="week" id="label-name">
+            Trip <br>
+        </label>
+        <input type="radio" name="trip" value="yes">One Day<br>
+        <input type="radio" name="trip" value="yes">Weekend<br>
+        <input type="radio" name="trip" value="no">Big Trip
+    </div>
+    <br>
+    <div class="form-control">
+        <label for="places" id="label-name">
+            Place you wanna visit for a day - <br>
+        </label>
+        <select id="dropdown">
+            <option value="none">None</option>
+            <option value="Caves">Elephanta Caves</option>
+            <option value="Marines">Marines</option>
+            <option value="Juhu">Juhu beach</option>
+            <option value="Park">National Park</option>
+            <option value="Fort">Vasai Fort</option>
+            <option value="ratangad">Kelve Dam</option>
+        </select>
+    </div>
+    <br>
+    <div class="form-control">
+        <label for="places" id="label-name">
+            Place you wanna visit for Weekend - <br>
+        </label>
+        <select id="dropdown">
+            <option value="none">None</option>
+            <option value="Alibaug">Alibaug</option>
+            <option value="lonavala">Lonavala</option>
+            <option value="Matheran">Matheran</option>
+            <option value="Ratangad">Ratangad</option>
+            <option value="Mahabaleshwar">Mahabaleshwar</option>
+        </select>
+    </div>
+    <br>
+    <div class="form-control">
+        <label for="places" id="label-name">
+            Place you wanna visit for Big Trip - <br>
+        </label>
+        <select id="dropdown" required>
+        <option value="none">None</option>
+        <option value="Kedarnath">Kedarnath</option>
+        <option value="Kashmir">Kashmir</option>
+        <option value="Meghalaya">Meghalaya</option>
+        <option value="Goa">Goa</option>
+        </select>
+    </div>
+    <br>
+    <div class="form-control">
+        <label for="other" id="label-name">
+            Any other  - <br>
+        </label>
+        <textarea id="text" name="text" rows="2" cols="30" placeholder="enter text here"></textarea>
+    </div>
+</fieldset>-->
