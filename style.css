@@ -9,7 +9,7 @@ body{
     margin: 2% 10%;
 } 
 .main{
-    background-color: white;
+    background-color: white; 
 }
 .head{
     display: flex;
@@ -21,7 +21,6 @@ body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: oblique;
     text-shadow: 1px 1px;
-    /*background-color: #abc4ff; */
 }
 .legend{
     font: italic 1.3em "Fira Sans", serif;
@@ -41,38 +40,22 @@ fieldset, .field1, .field2, .field3{
     text-shadow: 1px 1px 2px #b37486;
     font: "Fira Sans", sans-serif; 
 }
-/*.field1{
-    margin: 2%;
-    padding: 7px;
-    border-radius: 2px;
-    font-size: 15px;
-    color: #9ab7d3;
-    text-shadow: 1px 1px;
-    font: 1.2em "Fira Sans", sans-serif; 
-}
-.field2{
-    margin: 2%;
-    padding: 7px;
-    border-radius: 2px;
-    font-size: 15px;
-    color: #9ab7d3;
-    font: 1.2em "Fira Sans", sans-serif;
-} */
 p{
-    font-size: 23px;
+    font-size: 1.6rem;
     text-align: center;
     color: #A0829A;
     text-shadow: 1px 1px 2px #9ab7d3;
     font-style: oblique;
 }
-p1{
+.input{
     color: #C18897;
     font-size: 15px;
-    text-align: center;
-    padding: 1%;
+    padding: 4px;
+    margin: 3px 7px;
     text-shadow: 1px;
+   /* border-radius: 4px; */
 }
-button{
+.btn{
     margin: .5em;
     font-size: 20px;
     text-align: center;
@@ -87,4 +70,7 @@ button{
 .submit{
     display: flex;
     justify-content: center;
+}
+.text-color{
+    color: #252525;
 }
