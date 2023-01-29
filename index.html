@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+<body>
+    
 <div class="main">
     <heading class="head">
         OUTING SURVEY
@@ -18,31 +20,31 @@
             <legend class="legend">&emsp13;Personal Details&emsp13;</legend>
             <div class="form-control">
                 <label for="name" id="label-name">
-                    Name:<br>
+                    Name: <br>
                 </label>
-                <p1><input type="text" id="name" placeholder="eg. Priyanshi Shah" /></p1>
+                <input class="input" type="text" id="name" name="fullname" placeholder="eg. Priyanshi Shah" />
             </div>
             <br>
             <div class="form-control">
                 <label for="email" id="label-name">
                     Email I'd: <br>
                 </label>
-                <p1><input type="text" id="name" placeholder="eg. abc@email.com" /></p1>
+                <input class="input" type="text" id="email" name="emailid" placeholder="eg. abc@email.com" />
             </div>
             <br>
             <div class="form-control">
                 <label for="mob" id="label-name">
                     Mobile No: <br>
                 </label>
-                <p1><input type="text" id="name" placeholder="eg. 89xx" /></p1>
+                <input class="input" type="text" id="mob" name="mobile" placeholder="eg. 89xx" />
             </div>
             <br>
             <div class="form-control">
                 <label for="outing" id="label-name">
                     Are you excited for Outing? <br>
                 </label>
-                <p1><input type="radio" name="yes" value="yes">YES<br></p1>
-                <p1><input type="radio" name="yes" value="no">A big YES!!</p1>
+                <input class="input" type="radio" id="outing" name="yes" value="no">YES <br>
+                <input class="input" type="radio" id="outing" name="yes" value="yes">No<br>
             </div>
         </fieldset>
 
@@ -54,29 +56,29 @@
                 <label for="date" id="label-name">
                     Date of Proposed Outing: 
                 </label>
-                <input type="date" name="trip" value="dam"><br>
+                <input class="input" type="date" id="date" name="datefield" value="dam"><br>
             </div>
             <br>
             <div class="form-control">
                 <label for="places" id="label-name">
                     Place you want to visit: <br>
                 </label>
-                <p1><select id="dropdown">
-                    <option value="none">None</option>
+                <select class="input text-color" id="places" name="place">
                     <option value="Caves">Elephanta Caves</option>
                     <option value="Marines">Marines</option>
                     <option value="Juhu">Juhu beach</option>
                     <option value="Park">National Park</option>
                     <option value="Fort">Vasai Fort</option>
                     <option value="ratangad">Kelve Dam</option>
-                </select></p1>
+                    <option value="none">None</option>
+                </select>
             </div>
             <br>
             <div class="form-control">
                 <label for="other" id="label-name">
                     Any other Suggestions? <br>
                 </label>
-                <p1><textarea id="text" name="text" rows="3" cols="30" placeholder="enter text here"></textarea></p1>
+                <textarea class="input" id="other" name="other" rows="7" cols="50" placeholder="enter text here"></textarea>
             </div>
         </fieldset>
 
@@ -86,115 +88,45 @@
                 <label for="food" id="label-name">
                     Lunch: <br>
                 </label>
-                <p1><input type="radio" name="food" value="jain">Jain<br></p1>
-                <p1><input type="radio" name="food" value="veg">Non-Jain<br></p1>
+                <input class="input" type="radio" name="food" value="jain">Jain<br>
+                <input class="input" type="radio" name="food" value="veg">Non-Jain<br>
             </div>
             <br>
             <div class="form-control">
                 <label for="item1" id="label-name">
                     Jain: <br>
                 </label>
-                <p1><input type="checkbox" name="" value="">Jain Thali<br></p1>
-                <p1><input type="checkbox" name="" value="">Jain PavBhaji<br></p1>
-                <p1><input type="checkbox">Jain Pizza<br></p1>
-                <p1><input type="checkbox">Jain Sandwich<br></p1>
+                <input class="input" type="checkbox" name="foodname">Jain Thali<br>
+                <input class="input" type="checkbox" name="foodname">Jain PavBhaji<br>
+                <input class="input" type="checkbox" name="foodname">Jain Pizza<br>
+                <input class="input" type="checkbox" name="foodname">Jain Sandwich<br>
             </div>
             <br>
             <div class="form-control">
                 <label for="item2" id="label-name">
                     Non-Jain: <br>
                 </label>
-                <p1><input type="checkbox" name="" value="">Veg Thali<br></p1>
-                <p1><input type="checkbox">Pav Bhaji<br></p1>
-                <p1><input type="checkbox">Pizza<br></p1>
-                <p1><input type="checkbox">Sandwich<br></p1>
-                <p1><input type="checkbox">Dosa<br></p1>
+                <input class="input" type="checkbox" name="fname">Veg Thali<br>
+                <input class="input" type="checkbox" name="fname">Pav Bhaji<br>
+                <input class="input" type="checkbox" name="fname">Pizza<br>
+                <input class="input" type="checkbox" name="fname">Sandwich<br>
+                <input class="input" type="checkbox" name="fname">Dosa<br>
             </div>
             <br>
             <div class="form-control">
                 <label for="desert" id="label-name">
                     Desert: <br>
                 </label>
-                <p1><input type="radio" name="desert" value="ice">Ice-Cream<br></p1>
-                <p1><input type="radio" name="desert" value="muf">Muffins<br></p1>
+                <input class="input" type="radio" name="desert" value="ice">Ice-Cream<br>
+                <input class="input" type="radio" name="desert" value="muf">Muffins<br>
             </div>
         </fieldset>
         <div class="submit">
-            <button type="submit" value="Submit">&emsp13;Submit&emsp13;</button>
+            <button class="btn" type="submit" value="Submit">&emsp13;Submit&emsp13;</button>
         </div>
     </form>
 </div>
 
-</html>
+</body>
 
-<!--<fieldset class="field2">
-    <legend class="legend">Yayyy, Outing!!</legend>
-    <p>Where would you like to go?
-        Here are some places mentioned below if you're interested. if not, please recommend which place you
-        wanna visit.</p>
-    <br>
-    <div class="form-control">
-        <label for="date" id="label-name">
-            Date of Proposed Outing <br>
-        </label>
-        <input type="date" name="trip" value="dam"><br>
-    </div>
-    <br>
-    <div class="form-control">
-        <label for="week" id="label-name">
-            Trip <br>
-        </label>
-        <input type="radio" name="trip" value="yes">One Day<br>
-        <input type="radio" name="trip" value="yes">Weekend<br>
-        <input type="radio" name="trip" value="no">Big Trip
-    </div>
-    <br>
-    <div class="form-control">
-        <label for="places" id="label-name">
-            Place you wanna visit for a day - <br>
-        </label>
-        <select id="dropdown">
-            <option value="none">None</option>
-            <option value="Caves">Elephanta Caves</option>
-            <option value="Marines">Marines</option>
-            <option value="Juhu">Juhu beach</option>
-            <option value="Park">National Park</option>
-            <option value="Fort">Vasai Fort</option>
-            <option value="ratangad">Kelve Dam</option>
-        </select>
-    </div>
-    <br>
-    <div class="form-control">
-        <label for="places" id="label-name">
-            Place you wanna visit for Weekend - <br>
-        </label>
-        <select id="dropdown">
-            <option value="none">None</option>
-            <option value="Alibaug">Alibaug</option>
-            <option value="lonavala">Lonavala</option>
-            <option value="Matheran">Matheran</option>
-            <option value="Ratangad">Ratangad</option>
-            <option value="Mahabaleshwar">Mahabaleshwar</option>
-        </select>
-    </div>
-    <br>
-    <div class="form-control">
-        <label for="places" id="label-name">
-            Place you wanna visit for Big Trip - <br>
-        </label>
-        <select id="dropdown" required>
-        <option value="none">None</option>
-        <option value="Kedarnath">Kedarnath</option>
-        <option value="Kashmir">Kashmir</option>
-        <option value="Meghalaya">Meghalaya</option>
-        <option value="Goa">Goa</option>
-        </select>
-    </div>
-    <br>
-    <div class="form-control">
-        <label for="other" id="label-name">
-            Any other  - <br>
-        </label>
-        <textarea id="text" name="text" rows="2" cols="30" placeholder="enter text here"></textarea>
-    </div>
-</fieldset>-->
+</html>
