@@ -22,21 +22,21 @@
                 <label for="name" id="label-name">
                     Name: <br>
                 </label>
-                <input class="input" type="text" id="name" name="fullname" placeholder="eg. Priyanshi Shah" />
+                <input class="input" type="text" id="name" name="fullname" placeholder="eg. Priyanshi Shah" required/>
             </div>
             <br>
             <div class="form-control">
                 <label for="email" id="label-name">
                     Email I'd: <br>
                 </label>
-                <input class="input" type="text" id="email" name="emailid" placeholder="eg. abc@email.com" />
+                <input class="input" type="text" id="email" name="emailid" placeholder="eg. abc@email.com" pattern="[a-z0-9.]+@[a-z.]+\.[a-z]{3}" required/>
             </div>
             <br>
             <div class="form-control">
                 <label for="mob" id="label-name">
                     Mobile No: <br>
                 </label>
-                <input class="input" type="text" id="mob" name="mobile" placeholder="eg. 89xx" />
+                <input class="input" type="text" id="mob" name="mobile" placeholder="eg. 89xx" pattern="[0-9]{10}" required/>
             </div>
             <br>
             <div class="form-control">
@@ -56,7 +56,7 @@
                 <label for="date" id="label-name">
                     Date of Proposed Outing: 
                 </label>
-                <input class="input" type="date" id="date" name="datefield" value="dam"><br>
+                <input class="input" type="date" id="date" name="datefield" value="dam" required><br>
             </div>
             <br>
             <div class="form-control">
@@ -122,7 +122,7 @@
             </div>
         </fieldset>
         <div class="submit">
-            <button class="btn" type="submit" value="Submit">&emsp13;Submit&emsp13;</button>
+            <button class="btn" type="submit">&emsp13;Submit&emsp13;</button>
         </div>
     </form>
 </div>
